@@ -1,0 +1,12 @@
+{
+  "name": "project-pi-service",
+  "version": "1.0.0",
+  "description": "The service running on the raspberry pi to change the GPIO pins via the internet and bluetooth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
