@@ -42,3 +42,14 @@ Finally, restart the service:
 sudo systemctl daemon-reload
 sudo systemctl restart bluetooth
 ```
+## Installation
+
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm start
