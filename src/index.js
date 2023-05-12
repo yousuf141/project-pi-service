@@ -21,9 +21,11 @@ function main() {
     switch (item) {
       case "fan":
         fan.writeSync(value ? 1 : 0);
+        writetoClient(JSON.stringify({ item, value }));
         break;
       case "light":
         light.writeSync(value ? 1 : 0);
+        writetoClient(JSON.stringify({ item, value }));
         break;
       default:
         console.log(`Attempted to update unknown item: ${item}`);
@@ -47,12 +49,12 @@ function main() {
       case "fan":
         fan.writeSync(value ? 1 : 0);
         writetoClient(JSON.stringify({ item, value }));
-        socket.emit("updateItem", JSON.stringify({ item, value }));
+        socket.emit("updateItem", { item, value });
         break;
       case "light":
         light.writeSync(value ? 1 : 0);
         writetoClient(JSON.stringify({ item, value }));
-        socket.emit("updateItem", JSON.stringify({ item, value }));
+        socket.emit("updateItem", { item, value });
         break;
       default:
         console.log(`Attempted to update unknown item: ${item}`);
