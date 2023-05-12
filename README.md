@@ -1,2 +1,4 @@
 # project/pi-service
- The service running on the raspberry pi to change the GPIO pins via the internet and bluetooth
+this project was created by Muhammad Yousuf Ali, 18044950 for my final year project.
+## description
+This is the Raspberrypi server for my final year project, this service is running on the raspberry pi to change the GPIO pins via Http request for the web server and/or from a smartphone via Bluetooth.
